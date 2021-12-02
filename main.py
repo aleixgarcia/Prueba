@@ -5,8 +5,11 @@
 
 
 def main():
-    llista = [10, 20, 30, 40, 50]
-    print(llista[6::-1])
+    nom=str(input("introdueix el teu nom: "))
+    cognom1=str(input("Introdueix el primer cognom: "))
+    cognom2=str(input("Introdueix el segon cognom: "))
+
+    print(cognom1[0:2]+cognom2[0:2]+nom[0:2])
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
