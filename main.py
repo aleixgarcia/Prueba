@@ -7,33 +7,35 @@
 def main():
 
     reg=int(input("Quants valors vols introduir?"))
-    llista_codi = ["codi"]
-    llista_tlf = ["tlf"]
-    llista_edat=["edat"]
-    llista_cntcte=["cntcte"]
-    x=1
+    llista_codi = list()
+    llista_tlf = list()
+    llista_edat= list()
+    llista_cntcte= list()
 
-    for x in range(0,reg):
-        codi = x + 1
-        llista_codi.append(codi)
 
-        tlf = int(input("Introdueix el num de telefon de la persona :"))
-        llista_tlf.append(tlf)
+    for x in range(reg):
 
-        edat = int(input("introdueix l'edat de la persona: "))
-        llista_edat.append(edat)
 
-        cntcte = bool(input("Si vols que tinguem el teu contacte escriu, sino dona-li al enter:"))
-        llista_cntcte.append(cntcte)
+        nom=str(input("Introdueix el teu nom:"))
+        cognom1=str(input("Introdeuix el primer cognom:"))
+        cognom2=str(input("Introdueix el segon cognom:"))
 
-    print("***********************************************")
-    print("Codi\t|\tTelèfon\t\t|\tEdat\t\t|\tContacte")
-    for x in range(0, reg):
-        print("\t", llista_codi[x+1], "\t|\t", llista_tlf[x+1], "\t|\t\t", llista_edat[x+1], "\t|\t", llista_cntcte[x+1])
-    print("***********************************************")
+        llista_codi.append(cognom1[0:2]+cognom2[0:2]+nom[0:2])
+
+        llista_tlf.append(int(input("Introdueix el num de telefon de la persona :")))
+
+        llista_edat.append(int(input("introdueix l'edat de la persona: ")))
+
+        llista_cntcte.append(bool(input("Si vols que tinguem el teu contacte escriu, sino dona-li al enter:")))
+
+    print("****************************************************")
+    print("----------------------------------------------------")
+    print("Codi\t|\tTelèfon\t\t|\t\tEdat\t|\tContacte")
+    for x in range(reg):
+        print(llista_codi[x], "\t|\t", llista_tlf[x], "\t|\t\t", llista_edat[x], "\t|\t", llista_cntcte[x])
+    print("****************************************************")
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
     main()
-
 
