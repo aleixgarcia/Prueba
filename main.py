@@ -22,15 +22,23 @@ def main():
 
         llista_codi.append(cognom1[0:2]+cognom2[0:2]+nom[0:2])
 
-        llista_tlf.append(int(input("Introdueix el num de telefon de la persona :")))
+        tlf=int(input("Introdueix el telèfon de contacte:"))
+        l_tlf=len(str(tlf))
+        while l_tlf<9 or l_tlf>9:
+            tlf = int(input("Introdueix el telèfon de contacte de 9 nums:"))
+            l_tlf = len(str(tlf))
+        llista_tlf.append(tlf)
 
-        llista_edat.append(int(input("introdueix l'edat de la persona: ")))
+        edat= int(input("introdueix l'edat de la persona: "))
+        while edat<=0:
+            edat= int(input("introdueix un altre edat de la persona: "))
+        llista_edat.append(edat)
 
         llista_cntcte.append(bool(input("Si vols que tinguem el teu contacte escriu, sino dona-li al enter:")))
 
     print("****************************************************")
-    print("----------------------------------------------------")
     print("Codi\t|\tTelèfon\t\t|\t\tEdat\t|\tContacte")
+    print("----------------------------------------------------")
     for x in range(reg):
         print(llista_codi[x], "\t|\t", llista_tlf[x], "\t|\t\t", llista_edat[x], "\t|\t", llista_cntcte[x])
     print("****************************************************")
@@ -38,4 +46,3 @@ def main():
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
     main()
-
