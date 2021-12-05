@@ -6,19 +6,33 @@
 
 def main():
 
-    num1=int(input("introdueix el primer num: "))
-    num2=int(input("introdueix el segon num: "))
-    aux=1
+    sumaA=0
+    sumaS=0
+    auxA=0
+    auxS=0
+    notes=list()
 
-    while num1>num2:
-        print("Error!")
-        num2=int(input("introdueix un numero major que el primer: "))
-    while num1<num2:
-        print(num1, end=",")
-        num1=aux+num1
-    print(num2,end="")
+    reg=int(input("Introdueix el num de registres de notes:"))
 
+    for x in range(reg):
+        notes.append(int(input("Introdueix la nota de l'alumne:")))
+        if notes[x]>=4:
+            sumaA=notes[x]+sumaA
+            auxA=auxA+1
+        else:
+            sumaS=notes[x]+sumaS
+            auxS=auxS+1
+    sumaA = sumaA / auxA
+    sumaS = sumaS / auxS
+    print("***************************************")
+    print("Les notes dels alumnes son: ")
+    for x in range(reg-1):
+        print(notes[x], end=",")
+    print(notes[-1],end="")
+    print("\n***************************************")
 
+    print("La mitjana dels aprobats es: ",sumaA)
+    print("La mitjana dels suspesos es: ", sumaS)
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
