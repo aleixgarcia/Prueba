@@ -4,37 +4,34 @@
 # Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
 
 def main():
-    sumaA=0
-    sumaS=0
-    auxA=0
-    auxS=0
-    notes=list()
 
-    reg=int(input("Introdueix el num de registres de notes:"))
+   dict={
+       "username":[],
+       "department":[],
+       "classroom":[]
+   }
 
-    for x in range(reg):
-        nota=int(input("Introdueix la nota de l'alumne:"))
-        if nota<0 or nota>10:
-            nota=int(input("Introdueix la nota menor de 10 i major de 0:"))
-        notes.append(nota)
-        if notes[x]>4:
-            sumaA=notes[x]+sumaA
-            auxA=auxA+1
-        else:
-            sumaS=notes[x]+sumaS
-            auxS=auxS+1
-    sumaA = sumaA / auxA
-    sumaS = sumaS / auxS
-    print("*************************************************")
-    print("Les notes dels alumnes son: {", end="")
-    for x in range(reg-1):
-        print(notes[x], end=",")
-    else:
-        print(notes[-1],end="}")
-    print("\n*************************************************")
+   num=int(input("Introdueix el num d'usuaris: "))
 
-    print("La mitjana dels aprobats es: ",sumaA)
-    print("La mitjana dels suspesos es: ", sumaS)
+   for x in range(num):
+       user=str(input("Introdueix el nom d'usuari: "))
+       dict["username"]=user
+
+       dpt=str(input("Introdueix el nom de departament: "))
+       dict["department"]=dpt
+
+       clas=int(input("Introdueix el numero de classe:"))
+       while clas<1 or clas>15:
+           clas= int(input("Introdueix un num de l'1 al 15:"))
+       dict["classroom"]=clas
+
+       for x in range(1):
+           print("*************************************************")
+           print("USUARI\t\t|\tDEPARTAMENT\t|\t\tCLASSE")
+           print("-------------------------------------------------")
+           print(dict["username"],dict["department"],dict["classroom"],sep="\t\t|\t\t")
+       print("*************************************************")
+       dict.clear()
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
