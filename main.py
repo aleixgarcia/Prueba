@@ -6,7 +6,7 @@
 def main():
 
 
-   nums=[x for x in range(0,31,2)]
+   nums=[x for x in range(1,1001) if x % 8 == 0]
    print(nums)
 
 # Press the green button in the gutter to run the script.
