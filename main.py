@@ -5,7 +5,12 @@
 
 def main():
 
+   #Exercici 1 --------------------------------
+   nums = [x for x in range(0, 31, 2)]
+   print(nums)
 
+
+   #Exercici 2 --------------------------------
    nums=[x for x in range(1,1001) if x % 8 == 0]
    print(nums)
 
