@@ -24,7 +24,7 @@ def main():
    # Exercici 4 --------------------------------
    state = 'Practica els problemes de list comprehensions per a ser més Pythonic!'
    v_state=[x.count(' ') for x in state if x in ' ']
-   print(v_state)
+   print(len(v_state))
 
 
    # Exercici 5 --------------------------------
