@@ -16,15 +16,15 @@ def main():
 
 
    # Exercici 3 --------------------------------
-   #nums=[x for x in range(1,1001)]
-   #nums_six=[x for x in nums if x in  ]
-   #print(nums_six)
+   nums=[x for x in range(1,1001)]
+   nums_six=[x for x in nums if x == 6 ]
+   print(nums_six)
 
 
    # Exercici 4 --------------------------------
    state = 'Practica els problemes de list comprehensions per a ser més Pythonic!'
    v_state=[x.count(' ') for x in state if x in ' ']
-   print(len(v_state))
+   print("Hay",len(v_state),"espacios")
 
 
    # Exercici 5 --------------------------------
