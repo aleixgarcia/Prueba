@@ -19,13 +19,12 @@ def main():
 
    # Exercici 4 --------------------------------
    state = 'Practica els problemes de list comprehensions per a ser més Pythonic!'
-   v_state = [x.count(' ') for x in state if x in ' ']
+   v_state = [x for x in state if x in ' ']
    print("Hay", len(v_state), "espacios")
 
    # Exercici 5 --------------------------------
    state = 'Practica els problemes de list comprehensions per a ser més Pythonic!'
-   vowels = ('a', 'e', 'i', 'o', 'u')
-   f_state = [x for x in state if x not in vowels]
+   f_state = [x for x in state if x not in 'aeioué']
    print(f_state)
 
    # Exercici 6 --------------------------------
