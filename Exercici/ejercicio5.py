@@ -2,7 +2,6 @@ from functions import *
 from literales import *
 """----------------------EJERCICIO 5-------------------------"""
 
-
 def menucsv(opcio):
     opciocsv=int(input(MENUCSV))
     match opciocsv:

@@ -9,3 +9,5 @@ EDAD='Introdueix la teva edat:'
 MENU= 'Indica la tecnologia interesa:\n\t1.-IT\n\t2.-Big Data\n\t3.-Web Developer\n'
 MENUCSV = 'Indica la opció a escogir entre:\n\t1.-Llegir un CSV\n\t2.-Afegir dades al CSV\n'
 LLEGIR = 'Demanem arxiu per llegir'
+TXT = "El contingut del fitxer és el següent:"
+ALTRES = "A continuació, introdueix altres dades al fitxer:"

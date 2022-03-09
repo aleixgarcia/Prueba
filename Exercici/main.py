@@ -49,21 +49,19 @@ def main():
 
     """
     #----------------EJERCICIO 5---------------------
-    #menucsv("Demanem opcio:")
+    menucsv("Demanem opcio:")
 
     # ----------------EJERCICIO 7---------------------
-    """
-    arxiu=('C:\\Users\\aleii\\bio.csv')
+    """arxiu=('C:\\Users\\aleii\\bio.csv')
     print("El contingut del fitxer és el següent:")
     read_file(arxiu)
-    print("A continuació, introdueix altres dades al fitxer:")
     text = contingut("Demanem contingut")
-    filecsv7(arxiu,text)
-    """
+    filecsv7(arxiu,text)"""
+
 
     # ----------------EJERCICIO 8---------------------
-    txt=('C:\\Users\\aleii\\projects.csv')
-    filecsv8(txt)
+    """txt=('C:\\Users\\aleii\\projects.csv')
+    filecsv8(txt)"""
 
 
 if __name__ == '__main__':
