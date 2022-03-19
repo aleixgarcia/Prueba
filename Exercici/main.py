@@ -1,3 +1,5 @@
+import genericpath
+
 from literales import *
 from functions import *
 from ejercicio2 import *
@@ -6,6 +8,12 @@ from ejercicio4 import *
 from ejercicio5 import *
 from ejercicio7 import *
 from ejercicio8 import *
+from invent import *
+import os
+from sentinella import *
+from datetime import datetime
+
+MITG = "El fitxer existeix, vols sobreescriure'l? \n\ty=Si\n\taltre=No"
 
 def main():
     #Escribo en un fichero (o lo creo)
@@ -49,7 +57,7 @@ def main():
 
     """
     #----------------EJERCICIO 5---------------------
-    menucsv("Demanem opcio:")
+    #menucsv("Demanem opcio:")
 
     # ----------------EJERCICIO 7---------------------
     """arxiu=('C:\\Users\\aleii\\bio.csv')
@@ -62,6 +70,28 @@ def main():
     # ----------------EJERCICIO 8---------------------
     """txt=('C:\\Users\\aleii\\projects.csv')
     filecsv8(txt)"""
+
+    # ----------------EJERCICIO 8(de otra forma)---------------------
+    #get_info()
+
+    # ----------------EJERCICIO INVENT---------------------
+    #invent()
+
+    #------------------EXAMEN------------------
+    #prova1()
+    #exercici2()
+    #exercici3()
+    #prova2()
+    #ans = 'y'
+    #f = usuari()
+    #if(os.path.exists(f) == True):
+    #    ans = input(MITG)
+    #if(ans == 'y'):
+    #    createFile(f)
+
+    #------------------ACTIVITAT PRACTICA-----------------
+    d = dia()
+    sentinella(d)
 
 
 if __name__ == '__main__':
